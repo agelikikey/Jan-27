@@ -99,62 +99,70 @@
 // }
 
 //console.log the string 'hello world'
-let var1 = 'Hello World'
-console.log( var1 )
+// let var1 = 'Hello World'
+// console.log( var1 )
 
-// save num 7 in a var and console.log it
-let var2 = 7
-console.log ( var2 )
+// // save num 7 in a var and console.log it
+// let var2 = 7
+// console.log ( var2 )
 
 
-// x = 5
-let x = 5
-console.log(x)
+// // x = 5
+// let x = 5
+// console.log(x)
 
-// create a var set it equal to x plus 10, console.log it
+// // create a var set it equal to x plus 10, console.log it
 
-let var3 = x + 10
-console.log (var3)
+// let var3 = x + 10
+// console.log (var3)
 
-// create var set it equal to 'hello', create another equal to 'world' .. cocatenate them with a space in the middle, console.log it
+// // create var set it equal to 'hello', create another equal to 'world' .. cocatenate them with a space in the middle, console.log it
  
- let var4 = 'Hello'
- let var5 = "World"
-  console.log( var4 + ' ' + var5)
+//  let var4 = 'Hello'
+//  let var5 = "World"
+//   console.log( var4 + ' ' + var5)
 
-// use x = [9,8,7,6]
-let y = [9,8,7,6]
-  console.log(y)
+// // use x = [9,8,7,6]
+// let y = [9,8,7,6]
+//   console.log(y)
 
-// console.log num 8 from the list x
-console.log(y[1])
+// // console.log num 8 from the list x
+// console.log(y[1])
 
-// console.log num 6 from the list x
-console.log(y[3])
-// use obj = {
-//   name: 'Joe'
+// // console.log num 6 from the list x
+// console.log(y[3])
+// // use obj = {
+// //   name: 'Joe'
+// //   age: 5
+// // }
+
+// z = {
+//   name: 'Joe',
 //   age: 5
 // }
 
-z = {
-  name: 'Joe',
-  age: 5
-}
-
-// console.log 'Joe' from the var obj
-console.log(z.name)
-// console.log 5 from the var obj
-console.log(z.age)
-//google how to create a random number with javascript
-Math.floor (Math.random()* 4) ;
-// use that random number to get a random item from the list x used about, ask if lost
-ranNum = Math.floor(Math.random() *4)
-console.log( y[ranNum] )
+// // console.log 'Joe' from the var obj
+// console.log(z.name)
+// // console.log 5 from the var obj
+// console.log(z.age)
+// //google how to create a random number with javascript
+// Math.floor (Math.random()* 4) ;
+// // use that random number to get a random item from the list x used about, ask if lost
+// ranNum = Math.floor(Math.random() *4)
+// console.log( y[ranNum] )
 
 name = [ 'angel', 'vicky', 'andrew', 'eloy']
 lastName = ['key','eley','vazquez']
 
-ranNumName = Math.floor (Math.random()* 4) ;
-ranLastName = Math.floor (Math.random()* 3) ;
 
-console.log ( name[ranNumName] + '  ' + lastName[ranLastName]); 
+ranLastName = Math.floor (Math.random()* lastName.length) ;
+
+for (let i=0; i<100; i++){
+ranNumName = Math.floor (Math.random()* name.length) ;
+ranNumLast = Math.floor (Math.random () * lastName.length)
+console.log( name[ranNumName] + ' ' + lastName[ranNumLast])
+}
+
+// console.log ( name[ranNumName] + '  ' + lastName[ranLastName]); 
+// console.log (lastName);
+// console.log (lastName[2])
